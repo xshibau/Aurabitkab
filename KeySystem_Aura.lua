@@ -1,5 +1,4 @@
 return {
-    script_key = "JRTtibghwXeykmqzh4r3oCvzf35xtb",
     PremiumKeys = {
         "JRTtibghwXeykmqzh4r3oCvzf35xtb",
         "ABCD1234EFGH5678"
