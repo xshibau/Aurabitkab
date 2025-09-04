@@ -3,21 +3,25 @@ local Scripts = {
     ["7939389895"] = "Mad_Road",
 
 }
-function isPremiumKey(key)
+
+local function isPremiumKey(key)
     for _, v in ipairs(keyData.PremiumKeys) do
         if v == key then return true end
     end
     return false
 end
-function getBlacklistReason(key)
-    return keyData.BlacklistKeys[key]
+
+local function getBlacklistReason(key)
+    return keyData.BlacklistKeys and keyData.BlacklistKeys[key]
 end
+
 if not script_key or getBlacklistReason(script_key) then
     game:GetService("Players").LocalPlayer:Kick(getBlacklistReason(script_key) or "Key bị chặn")
     return
 end
+
 if isPremiumKey(script_key) then
-    id = Scripts[tostring(game.GameId)]
+    local id = Scripts[tostring(game.GameId)]
     if id then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/xshibau/Aurabitkab/refs/heads/main/"..id..".lua"))()
     end
