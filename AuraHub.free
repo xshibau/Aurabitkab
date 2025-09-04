@@ -1,12 +1,13 @@
 local Scripts = {
-    ["00000000"] = "e8f14b80cec5dee0e394058e5fcda294",
-    ["11111111"] = "8383838383838383838"
+--[[ Blox Fruit ]]--
+    [7449423635] = "id40g2w7866ickfd0k27gpd4muzzkub3",
+    [2753915549] = "nu7p6q5v3o15m3x8iude1hyxq2uyau2z",
+    [4442272183] = "780qqjurax8q8m0v81ibu1p3zy5ia0pq",
+--[[ Arise Crossover ]]--
 }
 
-local function LoadScript(gameId)
-    local id = Scripts[gameId]
-    if not id then return end
+local id = Scripts[game.PlaceId] or Scripts[game.GameId]
+
+if id then
     loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/" .. id .. ".lua"))()
 end
-
-LoadScript(tostring(game.GameId))
