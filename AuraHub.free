@@ -1,0 +1,12 @@
+local Scripts = {
+    ["00000000"] = "e8f14b80cec5dee0e394058e5fcda294",
+    ["11111111"] = "8383838383838383838"
+}
+
+local function LoadScript(gameId)
+    local id = Scripts[gameId]
+    if not id then return end
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/" .. id .. ".lua"))()
+end
+
+LoadScript(tostring(game.GameId))
