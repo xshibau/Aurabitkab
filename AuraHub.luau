@@ -1,7 +1,7 @@
 local keyData = loadstring(game:HttpGet("https://raw.githubusercontent.com/xshibau/Aurabitkab/refs/heads/main/Keystone.lua"))()
 local script_key = keyData.script_key or ""
 local Scripts = {
-    ["7939389895"] = "Mad_Road.lua",
+    ["7939389895"] = "Mad_Road",
 
 }
 function isPremiumKey(key)
@@ -20,7 +20,7 @@ end
 if isPremiumKey(script_key) then
     id = Scripts[tostring(game.GameId)]
     if id then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/xshibau/Aurabitkat/refs/heads/main/" .. id .. ".lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xshibau/Aurabitka/refs/heads/main/" .. id .. ".lua"))()
     end
 else
     game:GetService("Players").LocalPlayer:Kick("Invalid Key")
