@@ -1,7 +1,7 @@
 local keyData = loadstring(game:HttpGet("https://raw.githubusercontent.com/xshibau/Aurabitkab/refs/heads/main/Keystone.lua"))()
 local script_key = keyData.script_key or ""
 local Scripts = {
-    ["00000000"] = "Mad_Road.lua",
+    ["7939389895"] = "Mad_Road.lua",
     ["11111111"] = "script2"
 }
 local function isPremiumKey(key)
