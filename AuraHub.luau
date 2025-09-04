@@ -1,4 +1,4 @@
-local keyData = loadstring(game:HttpGet("https://raw.githubusercontent.com/xshibau/Aurabitkat/refs/heads/main/premium_keys.lua"))()
+local keyData = loadstring(game:HttpGet("https://raw.githubusercontent.com/xshibau/Aurabitkab/refs/heads/main/Keystone.lua"))()
 local script_key = keyData.script_key or ""
 local Scripts = {
     ["00000000"] = "script1",
