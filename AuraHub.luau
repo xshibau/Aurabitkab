@@ -1,4 +1,7 @@
-local keyData = loadstring(game:HttpGet("https://raw.githubusercontent.com/xshibau/Aurabitkab/refs/heads/main/Keystone.lua"))()
+local rawData = game:HttpGet("https://raw.githubusercontent.com/xshibau/Aurabitkab/refs/heads/main/Keystone.lua")
+local keyDataFunc = loadstring(rawData)
+local keyData = keyDataFunc()
+
 local Scripts = {
     ["7939389895"] = "Mad_Road",
 
