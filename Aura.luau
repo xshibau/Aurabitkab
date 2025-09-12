@@ -9,7 +9,7 @@ loaderGui.Parent = player:WaitForChild("PlayerGui")
 loaderGui.ResetOnSpawn = false
 
 local mainFrame = Instance.new("Frame")
-mainFrame.Size = UDim2.new(0.3, 0, 0.2, 0)
+mainFrame.Size = UDim2.new(0.3, 0, 0, 250)
 mainFrame.Position = UDim2.new(0.35, 0, 0.4, 0)
 mainFrame.BackgroundColor3 = Color3.new(0.08, 0.08, 0.15)
 mainFrame.BackgroundTransparency = 0.3
@@ -203,7 +203,7 @@ local summitLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Vov
 
 local window = summitLib:CreateWindow({Name = "Aura Hub [Premium]",AccentColor3 = Color3.new(1, 0.235294, 0.337255)})
 local Tab1 = window:CreateTab({Name = "Script Settings", Icon = 'rbxassetid://7733765307'})
-Tab1:CreateButton({Text = "🟢 | 99 Night In Forest",Callback = function()
+Tab1:CreateButton({Text = "Working | 99 Night In Forest",Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshibau/Aurabitkab/refs/heads/main/99NightInForset.lua"))()
 end})
   
