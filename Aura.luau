@@ -206,6 +206,10 @@ local Tab1 = window:CreateTab({Name = "Script Settings", Icon = 'rbxassetid://77
 Tab1:CreateButton({Text = "Working | 99 Night In Forest",Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshibau/Aurabitkab/refs/heads/main/99NightInForset.lua"))()
 end})
+Tab1:CreateButton({Text = "Working | Mad Road",Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshibau/Aurabitkab/refs/heads/main/MadRoad.lua"))()
+end})
+
   
     loaderGui:Destroy()
 end
